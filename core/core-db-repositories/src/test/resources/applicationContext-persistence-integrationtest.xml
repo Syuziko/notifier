@@ -8,16 +8,12 @@
            http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd"
 
        default-lazy-init="true" default-autowire="byName">
-
+    <bean class="com.sflpro.notifier.db.initializer.DbInitializer" lazy-init="false"/>
+<!--    <bean id="databaseMigrationService" class="com.sflpro.notifier.db.initializer.impl.DbMigrationImpl" lazy-init="false"/>-->
     <!--Load datasource context-->
     <import resource="applicationContext-persistence-jpa.xml"/>
 
     <context:property-placeholder location="classpath:repositories_integration_test.properties"
                                   ignore-unresolvable="true"/>
-
-    <jdbc:embedded-database id="datasource" type="H2"/>
-
-
-
 
 </beans>

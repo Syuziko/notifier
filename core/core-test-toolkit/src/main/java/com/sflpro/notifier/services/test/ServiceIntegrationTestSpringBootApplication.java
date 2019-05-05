@@ -1,6 +1,5 @@
-package com.sflpro.notifier.test;
+package com.sflpro.notifier.services.test;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.PropertySource;
 
@@ -11,6 +10,6 @@ import org.springframework.context.annotation.PropertySource;
  * @author Yervand Aghababyan
  */
 @SpringBootApplication
-@PropertySource({"classpath:repositories_integration_test.properties"})
-public class RepositoryIntegrationTestSpringBootApplication {
+@PropertySource({"classpath:ms_notifications_integrationtest.properties"})
+public class ServiceIntegrationTestSpringBootApplication {
 }
