@@ -41,8 +41,6 @@ public abstract class AbstractNotificationServiceIntegrationTest<T extends Notif
         assertEquals(externalUuid, notification.getProviderExternalUuId());
     }
 
-    // TODO fix this test failing @mikron
-    @Ignore
     @Test
     public void testGetNotificationById() {
         // Prepare data

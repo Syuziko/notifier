@@ -155,7 +155,7 @@ CREATE TABLE IF NOT EXISTS notification_sms (
   CONSTRAINT fk_notification_sms_notification FOREIGN KEY (id) REFERENCES notification (id)
 ) AUTO_INCREMENT = 1;
 
-CREATE TABLE IF NOT EXISTS notification_usernotification_sms (
+CREATE TABLE IF NOT EXISTS notification_user (
   id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   notification_id BIGINT NOT NULL UNIQUE,
   nms_user_id bigint NOT NULL ,

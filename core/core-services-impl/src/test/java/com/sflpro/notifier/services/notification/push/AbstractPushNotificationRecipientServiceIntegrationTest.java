@@ -70,7 +70,7 @@ public abstract class AbstractPushNotificationRecipientServiceIntegrationTest<T 
     }
 
     // TODO fix this test failing @mikron
-    @Ignore
+//    @Ignore
     @Test
     public void testGetPushNotificationRecipientById() {
         // Prepare data

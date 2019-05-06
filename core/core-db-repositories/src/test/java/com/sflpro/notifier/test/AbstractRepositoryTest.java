@@ -1,9 +1,6 @@
 package com.sflpro.notifier.test;
 
-import com.sflpro.notifier.db.initializer.DbMigration;
-import org.junit.Before;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
@@ -30,17 +27,9 @@ public abstract class AbstractRepositoryTest {
     @PersistenceContext
     private EntityManager em;
 
-    @Autowired
-    private DbMigration databaseMigrationService;
-
     /* Constructors */
     public AbstractRepositoryTest() {
 
-    }
-
-    @Before
-    public void initDatabase() {
-        databaseMigrationService.migrate();
     }
 
     /* Utility methods */

@@ -4,10 +4,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.PropertySource;
 
 /**
+ * User: Syuzanna Eprikyan
  * Company: SFL LLC
- * Created on 1/22/18
- *
- * @author Yervand Aghababyan
+ * Date: 5/4/2019
+ * Time: 4:18 PM
  */
 @SpringBootApplication
 @PropertySource({"classpath:ms_notifications_integrationtest.properties"})

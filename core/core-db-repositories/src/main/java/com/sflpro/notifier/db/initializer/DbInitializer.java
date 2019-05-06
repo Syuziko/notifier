@@ -7,8 +7,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaVendorAdapter;
-import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
-import org.testcontainers.containers.MySQLContainer;
 import org.testcontainers.containers.PostgreSQLContainer;
 
 import javax.sql.DataSource;
@@ -51,7 +49,6 @@ public class DbInitializer {
         System.setProperty("spring.datasource.password", postgresContainer.getPassword());
         System.setProperty("spring.datasource.url", postgresContainer.getJdbcUrl());
         System.setProperty("spring.jpa.database-platform", "org.hibernate.dialect.PostgreSQLDialect");
-        System.setProperty("flyway.db.vendor", "postgresql");
         return dataSource;
     }
 
