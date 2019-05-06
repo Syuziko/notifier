@@ -11,8 +11,7 @@
                                   local-override="false"
                                   ignore-unresolvable="true"/>
 
-<!--    <bean class="com.sflpro.notifier.db.initializer.DbInitializer" lazy-init="false"/>-->
-<!--    <bean id="databaseMigrationService" class="com.sflpro.notifier.db.initializer.impl.DbMigrationImpl" lazy-init="false"/>-->
+    <bean class="com.sflpro.notifier.db.PostgreSQLTestContainerInitializer" lazy-init="false"/>
 
     <import resource="applicationContext-services.xml"/>
 

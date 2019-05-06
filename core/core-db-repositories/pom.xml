@@ -95,5 +95,11 @@
             <groupId>org.testcontainers</groupId>
             <artifactId>postgresql</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.sflpro.notifier</groupId>
+            <artifactId>core-test-toolkit</artifactId>
+            <version>${project.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 </project>
