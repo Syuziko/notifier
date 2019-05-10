@@ -1,16 +1,15 @@
 package com.sflpro.notifier.services.notification.push;
 
 import com.sflpro.notifier.db.entities.device.UserDevice;
-import com.sflpro.notifier.db.entities.user.User;
-import com.sflpro.notifier.services.device.dto.UserDeviceDto;
-import com.sflpro.notifier.services.notification.dto.push.PushNotificationRecipientDto;
 import com.sflpro.notifier.db.entities.notification.push.PushNotificationRecipient;
 import com.sflpro.notifier.db.entities.notification.push.PushNotificationRecipientStatus;
 import com.sflpro.notifier.db.entities.notification.push.PushNotificationSubscription;
+import com.sflpro.notifier.db.entities.user.User;
+import com.sflpro.notifier.services.device.dto.UserDeviceDto;
+import com.sflpro.notifier.services.notification.dto.push.PushNotificationRecipientDto;
 import com.sflpro.notifier.services.test.AbstractServiceIntegrationTest;
 import com.sflpro.notifier.services.util.mutable.MutableHolder;
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -21,7 +20,7 @@ import static org.junit.Assert.*;
  * Date: 8/13/15
  * Time: 1:36 PM
  */
-@Ignore
+//@Ignore
 public abstract class AbstractPushNotificationRecipientServiceIntegrationTest<T extends PushNotificationRecipient, K extends PushNotificationRecipientDto> extends AbstractServiceIntegrationTest {
 
     /* Constructors */
@@ -70,7 +69,7 @@ public abstract class AbstractPushNotificationRecipientServiceIntegrationTest<T 
     }
 
     // TODO fix this test failing @mikron
-    @Ignore
+//    @Ignore
     @Test
     public void testGetPushNotificationRecipientById() {
         // Prepare data
